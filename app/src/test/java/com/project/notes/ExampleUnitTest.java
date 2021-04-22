@@ -1,4 +1,4 @@
-package com.proyecto.notes;
+package com.project.notes;
 
 import org.junit.Test;
 

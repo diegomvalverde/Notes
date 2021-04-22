@@ -1,4 +1,4 @@
-package com.proyecto.notes;
+package com.project.notes;
 
 import android.content.Context;
 

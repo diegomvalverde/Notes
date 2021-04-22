@@ -7,29 +7,17 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/titleTextField"
-        android:hint="Title"
-        android:layout_width="360dp"
-        android:layout_height="0dp"
-        android:layout_marginTop="20dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/descriptionTextField"
-        android:hint="Description"
+        android:id="@+id/titileTextField"
         android:layout_width="360dp"
         android:layout_height="100dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="10dp"
         android:ems="10"
         android:gravity="start|top"
+        android:hint="Description"
         android:inputType="textMultiLine|textNoSuggestions"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titleTextField" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <Button
         android:id="@+id/saveButtom"
@@ -39,7 +27,7 @@
         android:text="Save Note"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/descriptionTextField" />
+        app:layout_constraintTop_toBottomOf="@+id/titileTextField" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
@@ -69,5 +57,16 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout"
         app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Delete"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/saveButtom"
+        app:layout_constraintTop_toBottomOf="@+id/titileTextField" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

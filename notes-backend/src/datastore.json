@@ -1,0 +1,9 @@
+{
+  "mysql":
+  {
+    "host": "localhost",
+    "user": "diego",
+    "password": "admin12345",
+    "database": "notes"
+  }
+}
